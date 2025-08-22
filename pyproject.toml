@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kde_classifier"
+version = "0.1.0"
+description = "KDE is a non-parametric estimation method which can extract the distribution rule from the data samples and solve the distribution density function of random variables from the given sample set."
+authors = [
+  { name = "Yang Liu" },
+  { name = "Hongxia He" },
+  { name = "Zhi-Xiong Xiao" },
+  { name = "Anquan Ji" },
+  { name = "Jian Ye" },
+  { name = "Qifan Sun" },
+  { name = "Yang Cao" },  
+   { name = "Daniel Grønhaug" },        
+]
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }               
+
+dependencies = [
+  "numpy>=1.26.4",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["kde_classifier*"]                   
