@@ -1,7 +1,8 @@
 # KDEClassifier
 
-A pip-installable distribution of KDEClassifier introduced by:
-Yang Liu, Hongxia He, Zhi-Xiong Xiao, Anquan Ji, Jian Ye, Qifan Sun, Yang Cao. See: [https://pubmed.ncbi.nlm.nih.gov/33313714/](https://pubmed.ncbi.nlm.nih.gov/33313714/)
+A pip-installable distribution of KDEClassifier introduced by:  
+Yang Liu, Hongxia He, Zhi-Xiong Xiao, Anquan Ji, Jian Ye, Qifan Sun, Yang Cao.  
+See: [https://pubmed.ncbi.nlm.nih.gov/33313714/](https://pubmed.ncbi.nlm.nih.gov/33313714/)
 
 Code adapted from: [http://cao.labshare.cn/KDEClassifier/index.html](http://cao.labshare.cn/KDEClassifier/index.html)
 
@@ -12,8 +13,11 @@ This repository provides two implementations:
 
 ---
 
-## Installation
 
+## Installation
+```bash
+pip install kde-classifier
+```
 
 ## Usage example
 
@@ -39,4 +43,5 @@ A pytest test file is provided under `tests/` that compares the original impleme
 pytest -q
 ```
 
+---
 

@@ -81,16 +81,6 @@ class KDEClassifier:
         bandwidth_default = np.mean(bandwidth_list)
         self.bandwidth = float(bandwidth_default)
 
-    def __dist(self, X, Y):
-        """
-        Private helper: Euclidean distance between two 1-D sequences.
-        """
-        dist = 0.0
-        for x, y in zip(X, Y):
-            dist += (x - y) ** 2
-        dist = math.sqrt(dist)
-        return dist
-
     def predict_proba(self, testsamples):
         """
         Return probability estimates for the test data.

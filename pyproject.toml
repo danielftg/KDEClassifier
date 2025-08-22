@@ -1,11 +1,11 @@
 [build-system]
-requires = ["setuptools>=42"]
+requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "kde_classifier"
 version = "0.1.0"
-description = "KDE is a non-parametric estimation method which can extract the distribution rule from the data samples and solve the distribution density function of random variables from the given sample set."
+description = "Kernel Density Estimation classifier with scikit-learn style API, based on Yang Liu et al. (2020)."
 authors = [
   { name = "Yang Liu" },
   { name = "Hongxia He" },
@@ -13,17 +13,34 @@ authors = [
   { name = "Anquan Ji" },
   { name = "Jian Ye" },
   { name = "Qifan Sun" },
-  { name = "Yang Cao" },  
-   { name = "Daniel Grønhaug" },        
+  { name = "Yang Cao" },
+  { name = "Daniel Grønhaug" },
 ]
 readme = "README.md"
 requires-python = ">=3.9"
-license = { text = "MIT" }               
+license = { text = "MIT" }
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
 
 dependencies = [
   "numpy>=1.26.4",
 ]
 
+[project.urls]
+Homepage = "https://github.com/danielftg/KDEClassifier"
+Repository = "https://github.com/danielftg/KDEClassifier"
+
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["kde_classifier*"]                   
+include = ["kde_classifier*"]
+exclude = ["tests*"]
